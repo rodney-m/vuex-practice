@@ -8,6 +8,15 @@ const store = createStore({
         return {
             counter : 0
         }
+    },
+    mutations: {
+        increment(state){
+            console.log(state)
+            state.counter+=2
+        },
+        increase(state, payload){
+            state.counter += payload.value
+        }
     }
 })
 
