@@ -21,12 +21,7 @@ export default {
     ChangeCounter,
     FavoriteValue
   },
-  computed: {
-    counter(){
-    return this.$store.state.counter *2
-
-    }
-  },
+ 
   methods: {
     addOne(){
       // this.$store.commit('increase', {value : 10})

@@ -15,12 +15,12 @@ const store = createStore({
            
         },
         increase(state, payload){
-            state.counter += payload.value
+            state.counter = state.counter + payload.value
         }
     },
     getters: {
         finalCounter(state){
-            return state.counter * 2
+            return state.counter 
         },
         nomalizedCounter(_, getters){
             const finalCounter=  getters.finalCounter
